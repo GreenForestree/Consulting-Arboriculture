@@ -1,0 +1,96 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ---------- Theme tokens ----------
+   Exposed as CSS variables so they're usable in custom CSS (e.g. selection,
+   focus rings, gradients) without round-tripping through Tailwind config.
+*/
+:root {
+  --color-bg: #fbf9f3;      /* cream-50 */
+  --color-bg-alt: #f5f1e6;  /* cream-100 */
+  --color-ink: #1a1f1a;
+  --color-forest: #284733;  /* forest-700 */
+  --color-forest-deep: #162a1d;
+  --color-moss: #857d34;
+  --color-bark: #6e5338;
+}
+
+/* ---------- Base ---------- */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-ink);
+  font-family: var(--font-sans), system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: var(--color-forest);
+  color: #fbf9f3;
+}
+
+/* Visible, accessible focus state — same for keyboard and click users on interactive elements */
+:where(a, button, input, select, textarea, [tabindex]):focus-visible {
+  outline: 2px solid var(--color-forest);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* Editorial headings */
+h1, h2, h3, h4 {
+  font-family: var(--font-serif), Georgia, serif;
+  color: var(--color-forest-deep);
+  font-weight: 500;
+  letter-spacing: -0.01em;
+}
+
+/* ---------- Motion ---------- */
+/* Reveal-on-scroll utility used by <FadeIn />. The element starts hidden and
+   the IntersectionObserver toggles data-visible=true to play the animation. */
+[data-reveal] {
+  opacity: 0;
+  transform: translateY(12px);
+  transition:
+    opacity 700ms cubic-bezier(0.2, 0.7, 0.2, 1),
+    transform 700ms cubic-bezier(0.2, 0.7, 0.2, 1);
+  will-change: opacity, transform;
+}
+[data-reveal][data-visible="true"] {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+  [data-reveal] {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* ---------- Utility components ---------- */
+@layer components {
+  .prose-editorial {
+    @apply text-forest-900/85 leading-relaxed;
+    font-size: 1.0625rem;
+  }
+  .prose-editorial p + p {
+    @apply mt-4;
+  }
+  .eyebrow {
+    @apply inline-block font-sans text-xs font-medium tracking-[0.18em] uppercase text-moss-600;
+  }
+  .hairline {
+    @apply h-px w-12 bg-forest-700/30;
+  }
+}

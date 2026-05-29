@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#162a1d"/>
+      <stop offset="60%" stop-color="#284733"/>
+      <stop offset="100%" stop-color="#345a3e"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <g transform="translate(80,72)" font-family="Georgia, serif" fill="#fbf9f3">
+    <g transform="translate(0,0)" font-size="28" opacity="0.9">
+      <circle cx="18" cy="14" r="18" fill="#d6d199"/>
+      <text x="18" y="22" text-anchor="middle" fill="#162a1d" font-weight="700">G</text>
+      <text x="50" y="22">Green ForesTree</text>
+      <text x="50" y="58" font-size="20" font-style="italic" fill="#d6d199">Where Tree Health &amp; Sustainability Take Root</text>
+    </g>
+    <g transform="translate(0,300)">
+      <text font-size="24" letter-spacing="4.8" fill="#d6d199">CONSULTING ARBORICULTURE</text>
+      <text y="92" font-size="72">Independent expertise for the</text>
+      <text y="172" font-size="72">trees that matter.</text>
+    </g>
+    <g transform="translate(0,486)" font-size="22" opacity="0.85">
+      <text>Miami Dade, Broward, and Palm Beach Counties</text>
+      <text x="1040" text-anchor="end">305.763.5159</text>
+    </g>
+  </g>
+</svg>
