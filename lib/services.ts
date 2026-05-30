@@ -61,6 +61,25 @@ export const services: Service[] = [
     ],
   },
   {
+    slug: "municipal-consulting",
+    title: "Municipal Consulting",
+    short:
+      "Capacity building support for public agency urban forestry programs: ordinances, SOPs, training, inventory strategy, permitting workflows, and program audits.",
+    description:
+      "Public agencies often need more than a single arborist report. They need the policy, procedure, and trained staff to manage trees consistently across an entire jurisdiction. We help cities, counties, and special districts build that capacity from the inside: drafting and revising ordinance language, writing the standard operating procedures that turn policy into routine practice, preparing staff for ISA certification, and auditing existing programs to find the gaps before a storm or a lawsuit does. Engagements draw on direct experience inside a major South Florida municipal urban forestry program.",
+    idealFor:
+      "Municipalities, counties, special districts, public works and parks and recreation departments, tree boards and urban forestry committees, and quasi public authorities (port, transit, and airport agencies).",
+    highlights: [
+      "Ordinance review and revision",
+      "Standard operating procedure (SOP) development",
+      "Staff training",
+      "Tree inventory strategy",
+      "Permitting workflow setup",
+      "Staff certification preparation",
+      "Urban forestry program audits",
+    ],
+  },
+  {
     slug: "construction-development-consulting",
     title: "Construction & Development Consulting",
     short:
@@ -77,22 +96,6 @@ export const services: Service[] = [
     ],
   },
   {
-    slug: "tree-preservation-mitigation",
-    title: "Tree Preservation & Mitigation",
-    short:
-      "Hands on preservation strategy during active construction, including root zone protection, monitoring, and recovery care.",
-    description:
-      "When a tree worth saving is inside the work zone, preservation is an ongoing engagement, not a checkbox. We specify root zone protection measures, monitor compliance during construction, and prescribe postconstruction care to address compaction, root loss, and grade change. Where preservation is not feasible, we document mitigation per local ordinance.",
-    idealFor:
-      "Owners and contractors managing construction near significant trees, and projects subject to tree mitigation requirements.",
-    highlights: [
-      "Root zone protection specifications",
-      "Construction phase monitoring visits",
-      "Postconstruction recovery care plans",
-      "Mitigation calculations and replacement specifications",
-    ],
-  },
-  {
     slug: "tree-appraisal-valuation",
     title: "Tree Appraisal & Valuation",
     short:
@@ -106,6 +109,22 @@ export const services: Service[] = [
       "Condition, location, and species ratings documented",
       "Written report suitable for insurance and tax filings",
       "Supporting photographs and market data",
+    ],
+  },
+  {
+    slug: "tree-preservation-mitigation",
+    title: "Tree Preservation & Mitigation",
+    short:
+      "Hands on preservation strategy during active construction, including root zone protection, monitoring, and recovery care.",
+    description:
+      "When a tree worth saving is inside the work zone, preservation is an ongoing engagement, not a checkbox. We specify root zone protection measures, monitor compliance during construction, and prescribe postconstruction care to address compaction, root loss, and grade change. Where preservation is not feasible, we document mitigation per local ordinance.",
+    idealFor:
+      "Owners and contractors managing construction near significant trees, and projects subject to tree mitigation requirements.",
+    highlights: [
+      "Root zone protection specifications",
+      "Construction phase monitoring visits",
+      "Postconstruction recovery care plans",
+      "Mitigation calculations and replacement specifications",
     ],
   },
   {
