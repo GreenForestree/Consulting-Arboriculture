@@ -68,7 +68,7 @@ export const services: Service[] = [
     description:
       "Most tree losses on construction sites are preventable, and most happen before a single shovel hits the ground. We work alongside architects, landscape architects, civil engineers, and contractors during design to identify which trees can realistically be saved, what protection they require, and how site logistics need to adjust. Deliverables meet local permitting and tree preservation ordinance requirements.",
     idealFor:
-      "Architects, landscape architects, civil engineers, developers, general contractors, and private owners.",
+      "Architects, landscape architects, civil engineers, developers, land use attorneys, general contractors, and private owners.",
     highlights: [
       "Preconstruction tree assessment and disposition table",
       "Tree Protection Plans and CRZ or TPZ delineation",
